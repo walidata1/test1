@@ -1,5 +1,3 @@
-
-
 function test() {
 
     //Retriving data
