@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <div class="container">
-        <form class="form" id="login">
-            <h1 class="form__title">Vänligen logga in</h1>
-            <div class="form__message form__message--error hide"></div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" id="username" autofocus placeholder="Username">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" id="password" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" href="./" id="linkLogout" type="submit" onclick="test()">Logga in</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Logga in</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="userLoggedIn"></h1>
+    </header>
 
+    <main>
+      <section class="loginP" id="loginPage">
+        <form method="POST">
+          <h2>Logga in</h2>
+          <label for="username">Användarnamn:<input type="text" id="username" name="username" />
+          </label>
+          <label for="password">Lösenord:<input type="password" id="password" name="password" />
+          </label>
+          <div class="errorMsg" id="errorMsgLogin"></div>
+          <button type="submit" id="LogInBtn" class="logInBtn" value="submit">Logga in</button>
+          </form>
+      </section>
+      <section class="welPage" id="welPage"></section>
+    
         </form>
-        <form class="form form--hidden" id="logout">
-            <h1 class="form__title">Välkommen!</h1>
+      </section>
+    </main>
 
-            <button class="form__button" href="./" id="linkLogin" type="submit" onclick="test()">Logga ut</button>
-
-        </form>
-    </div>
-    <script src="script.js"></script>
+    <footer>
+      <section>
+        <p>Denna sidan är Copyright &copy; av mig.</p>
+      </section>
+    </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
