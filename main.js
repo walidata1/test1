@@ -122,3 +122,4 @@ const clearFields = () => {
   inputs.forEach(input => {input.value = '';
   });
 };
+
