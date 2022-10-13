@@ -1,10 +1,6 @@
 * {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
   font-family: Georgia, serif, sans-serif;
 }
-
 
 
 header {
@@ -19,56 +15,49 @@ header {
 }
 
 main {
-  height: 60vh;
-  display: flex;
   justify-content: center;
   align-items: center;
+  height: 60vh;
+  display: flex;
+  
 }
 
 input {
-  width: 60%;
+  width: 70%;
 }
 
 label {
-  margin-top: 2rem;
-  width: 100%;
+  margin-top: 1.5rem;
   display: flex;
+  width: 100%;
 }
 
 .logInBtn {
-  width: 100%;
-  padding: 1.5rem 2rem;
-  font-size: 1.1rem;
-  color: #ffffff;
-  cursor: pointer;
+  color: #d4d898;
+  padding: 1.5rem 1.5rem;
+  font-size: 1.5rem;
   background: #252c6a;
 }
 
 .errorMsg {
   color: red;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 
 
 .welPage {
-  display: none;
   width: 100%;
+  display: none;
   justify-content: center;
 }
 
 .signOutBtn {
-  width: 100%;
+  color: #ffffff;
+  background: #a0070f;
   padding: 1.5rem 2rem;
   font-size: 1.1rem;
-  color: #ffffff;
-  cursor: pointer;
-  background: #a0070f;
-}
-
-.signOutPage {
-  display: none;
 }
 
 /*
